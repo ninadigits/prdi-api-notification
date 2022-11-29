@@ -1,0 +1,35 @@
+CRITICAL - 2022-10-27 16:31:51 --> Cannot access offset of type string on string
+in APPPATH\Models\Notification.php on line 40.
+ 1 APPPATH\Models\Notification.php(78): App\Models\Notification->update_notification_reg('0197210316000003', '02')
+ 2 APPPATH\Controllers\API\TransactionController.php(69): App\Models\Notification->compile_notification_reg_paid(Object(stdClass))
+ 3 APPPATH\Controllers\API\TransactionController.php(41): App\Controllers\API\TransactionController->_send('PAID')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\TransactionController->paid()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\TransactionController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 16:32:00 --> Cannot access offset of type string on string
+in APPPATH\Models\Notification.php on line 40.
+ 1 APPPATH\Models\Notification.php(79): App\Models\Notification->update_notification_reg('0197210316000003', '02')
+ 2 APPPATH\Controllers\API\TransactionController.php(69): App\Models\Notification->compile_notification_reg_paid(Object(stdClass))
+ 3 APPPATH\Controllers\API\TransactionController.php(41): App\Controllers\API\TransactionController->_send('PAID')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\TransactionController->paid()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\TransactionController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 16:35:34 --> Cannot use object of type CodeIgniter\HTTP\Response as array
+in APPPATH\Models\Notification.php on line 78.
+ 1 APPPATH\Controllers\API\TransactionController.php(69): App\Models\Notification->compile_notification_reg_paid(Object(stdClass))
+ 2 APPPATH\Controllers\API\TransactionController.php(41): App\Controllers\API\TransactionController->_send('PAID')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\TransactionController->paid()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\TransactionController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 17:22:05 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\API\TransactionController.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\API\\TransactionController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\TransactionController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\TransactionController')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\API\\TransactionController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

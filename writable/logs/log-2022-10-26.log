@@ -1,0 +1,66 @@
+CRITICAL - 2022-10-26 03:29:23 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 53.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:29:39 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 53.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:30:13 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\API\NotificationController.php on line 53.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:31:08 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 53.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:43:02 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 58.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:43:35 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 54.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:43:41 --> Cannot access offset of type string on string
+in APPPATH\Controllers\API\NotificationController.php on line 54.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:47:21 --> str_replace(): Argument #3 ($subject) must be of type array|string, stdClass given
+in APPPATH\Helpers\custom_helper.php on line 74.
+ 1 APPPATH\Helpers\custom_helper.php(74): str_replace([...], 'ROOTPATH\\public', Object(stdClass))
+ 2 APPPATH\Models\Notification.php(53): response_check_single(Object(stdClass))
+ 3 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 4 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-26 03:50:44 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\API\NotificationController.php on line 57.
+ 1 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

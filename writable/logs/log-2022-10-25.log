@@ -1,0 +1,116 @@
+CRITICAL - 2022-10-25 12:02:07 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\API\NotificationController.php on line 47.
+ 1 APPPATH\Controllers\API\NotificationController.php(23): App\Controllers\API\NotificationController->_view()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 12:03:09 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\API\NotificationController.php on line 47.
+ 1 APPPATH\Controllers\API\NotificationController.php(23): App\Controllers\API\NotificationController->_view()
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 12:07:29 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\API\NotificationController.php on line 47.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\API\\NotificationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\API\\NotificationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\API\\NotificationController')
+ 4 SYSTEMPATH\CodeIgniter.php(852): class_exists('\\App\\Controllers\\API\\NotificationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 21:18:17 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\API\NotificationController.php(50): CodeIgniter\Model->__call('compile_notification_reg', [...])
+ 4 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 21:31:58 --> str_replace(): Argument #3 ($subject) must be of type array|string, stdClass given
+in APPPATH\Helpers\custom_helper.php on line 74.
+ 1 APPPATH\Helpers\custom_helper.php(74): str_replace([...], 'ROOTPATH\\public', Object(stdClass))
+ 2 APPPATH\Models\Notification.php(52): response_check_single(Object(stdClass))
+ 3 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 4 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 21:33:37 --> Object of class stdClass could not be converted to string
+in APPPATH\Models\Notification.php on line 53.
+ 1 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 2 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 21:42:00 --> Cannot use object of type stdClass as array
+in APPPATH\Models\Notification.php on line 55.
+ 1 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 2 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-25 21:58:32 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\HTTP\CURLRequest.php on line 652.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-25 22:02:48 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\HTTP\CURLRequest.php on line 652.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-25 22:06:03 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Notification.php(78): CodeIgniter\Model->__call('respond', [...])
+ 4 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 5 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 22:06:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Notification.php(78): CodeIgniter\Model->__call('respond', [...])
+ 4 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 5 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 22:56:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Notification.php(81): CodeIgniter\Model->__call('respond', [...])
+ 4 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 5 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 22:57:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Notification.php(81): CodeIgniter\Model->__call('respond', [...])
+ 4 APPPATH\Controllers\API\NotificationController.php(52): App\Models\Notification->compile_notification_reg(Object(stdClass))
+ 5 APPPATH\Controllers\API\NotificationController.php(25): App\Controllers\API\NotificationController->_send()
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\API\NotificationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\NotificationController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
