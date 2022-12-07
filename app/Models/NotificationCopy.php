@@ -8,22 +8,46 @@ use Config\Services;
 class Notification extends Model
 {
     function get_notification_reg() {
-        $params = [];
-        $url = getenv('api.getNotifAxway');
-        return send_request($params, $url);
+        $param = [
+            'PARAM1' => [
+                "APPID" => getenv('app.id'),
+                "TYPE" => '01',
+                "ACTION" => __FUNCTION__,
+                "PARAMIN" => strval(func_num_args()),
+                "PARAMOUT" => '1'
+            ],
+            "PARAM2" => [
+                [
+                    "P1" => ''
+                ]
+            ]
+        ];
+        
+        return send_request($param, getenv('api.WSMobile'));
     }
 
     function update_notification_reg($data) {
-        $params = [
-            "P1" => $data['PRDI_ID'],
-            "P2" => $data['NOTIF_MESSAGE'],
-            "P3" => $data['STATUS'],
-            "P4" => $data['DATA_ID'],
-            "P5" => $data['NOTIF_TYPE_ID'],
-            "P6" => $data['SENT_DATE']
+        $param = [
+            'PARAM1' => [
+                "APPID" => getenv('app.id'),
+                "TYPE" => '01',
+                "ACTION" => __FUNCTION__,
+                "PARAMIN" => '6',
+                "PARAMOUT" => '0'
+            ],
+            "PARAM2" => [
+                [
+                    "P1" => $data['PRDI_ID'],
+                    "P2" => $data['NOTIF_MESSAGE'],
+                    "P3" => $data['STATUS'],
+                    "P4" => $data['DATA_ID'],
+                    "P5" => $data['NOTIF_TYPE_ID'],
+                    "P6" => $data['SENT_DATE']
+                ]
+            ]
         ];
-        $url = getenv('api.updateNotifAxway');
-        return send_request($url, $params);
+
+        return send_request($param, getenv('api.WSMobile'));
     }
 
     function compile_notification_reg_paid($notificationData) {

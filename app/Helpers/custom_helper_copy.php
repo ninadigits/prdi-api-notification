@@ -78,9 +78,9 @@ if (!function_exists('response_check_single')) {
 }
 
 if(!function_exists('send_request')) {
-    function send_request($url, $params, $method = 'POST') {
+    function send_request($param, $url, $method = 'POST') {
         $curl = curl_init();
-
+        
         curl_setopt_array($curl, array(
             CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
@@ -90,7 +90,7 @@ if(!function_exists('send_request')) {
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => $method,
-            CURLOPT_POSTFIELDS =>json_encode($params),
+            CURLOPT_POSTFIELDS =>json_encode($param),
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json'
             )
