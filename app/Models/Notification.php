@@ -8,46 +8,22 @@ use Config\Services;
 class Notification extends Model
 {
     function get_notification_reg() {
-        $param = [
-            'PARAM1' => [
-                "APPID" => getenv('app.id'),
-                "TYPE" => '01',
-                "ACTION" => __FUNCTION__,
-                "PARAMIN" => strval(func_num_args()),
-                "PARAMOUT" => '1'
-            ],
-            "PARAM2" => [
-                [
-                    "P1" => ''
-                ]
-            ]
-        ];
-        
-        return send_request($param, getenv('api.WSMobile'));
+        $param = [];
+        $url = getenv('api.getNotif');
+        return send_request($param, $url);
     }
 
     function update_notification_reg($data) {
         $param = [
-            'PARAM1' => [
-                "APPID" => getenv('app.id'),
-                "TYPE" => '01',
-                "ACTION" => __FUNCTION__,
-                "PARAMIN" => '6',
-                "PARAMOUT" => '0'
-            ],
-            "PARAM2" => [
-                [
-                    "P1" => $data['PRDI_ID'],
-                    "P2" => $data['NOTIF_MESSAGE'],
-                    "P3" => $data['STATUS'],
-                    "P4" => $data['DATA_ID'],
-                    "P5" => $data['NOTIF_TYPE_ID'],
-                    "P6" => $data['SENT_DATE']
-                ]
-            ]
+            "P1" => $data['PRDI_ID'],
+            "P2" => $data['NOTIF_MESSAGE'],
+            "P3" => $data['STATUS'],
+            "P4" => $data['DATA_ID'],
+            "P5" => $data['NOTIF_TYPE_ID'],
+            "P6" => $data['SENT_DATE']
         ];
-
-        return send_request($param, getenv('api.WSMobile'));
+        $url = getenv('api.getNotif');
+        return send_request($param, $url);
     }
 
     function compile_notification_reg_paid($notificationData) {
