@@ -80,8 +80,6 @@ class Serve extends BaseCommand
     protected $options = [
         '--php'  => 'The PHP Binary [default: "PHP_BINARY"]',
         '--host' => 'The HTTP Host [default: "localhost"]',
-        // '--host' => 'The HTTP Host [default: "172.251.38.62"]',
-        // '--port' => 'The HTTP Host Port [default: "80"]',
         '--port' => 'The HTTP Host Port [default: "8080"]',
     ];
 
@@ -93,7 +91,6 @@ class Serve extends BaseCommand
         // Collect any user-supplied options and apply them.
         $php  = escapeshellarg(CLI::getOption('php') ?? PHP_BINARY);
         $host = CLI::getOption('host') ?? 'localhost';
-        // $host = CLI::getOption('host') ?? '172.251.38.62';
         $port = (int) (CLI::getOption('port') ?? 8080) + $this->portOffset;
 
         // Get the party started.

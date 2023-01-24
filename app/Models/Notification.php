@@ -10,7 +10,8 @@ class Notification extends Model
     function get_notification_reg() {
         $param = [];
         $url = getenv('api.getNotif');
-        return send_request($param, $url);
+        $response = send_request($param, $url);
+        return $response;
     }
 
     function update_notification_reg($data) {
@@ -23,7 +24,8 @@ class Notification extends Model
             "P6" => $data['SENT_DATE']
         ];
         $url = getenv('api.getNotif');
-        return send_request($param, $url);
+        $response = send_request($param, $url);
+        return $response;
     }
 
     function compile_notification_reg_paid($notificationData) {

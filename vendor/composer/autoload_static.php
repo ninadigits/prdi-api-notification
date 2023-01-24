@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit7f9e5ccd18f5c73101472d978c0fd935
 {
     public static $files = array (
-        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -27,10 +26,6 @@ class ComposerStaticInit7f9e5ccd18f5c73101472d978c0fd935
         'L' => 
         array (
             'Laminas\\Escaper\\' => 16,
-        ),
-        'K' => 
-        array (
-            'Kint\\' => 5,
         ),
         'F' => 
         array (
@@ -67,10 +62,6 @@ class ComposerStaticInit7f9e5ccd18f5c73101472d978c0fd935
         'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
-        ),
-        'Kint\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
         'Faker\\' => 
         array (
