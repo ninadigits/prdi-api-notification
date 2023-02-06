@@ -2,6 +2,7 @@
 
 namespace App\Controllers\API;
 
+use CodeIgniter\API\ResponseTrait;
 use App\Models\Notification;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\RESTful\ResourceController;
@@ -14,6 +15,26 @@ class TransactionController extends ResourceController
         helper(['custom']);
     }
 
+    use ResponseTrait;
+    public function testApi() 
+    {
+        // $url = 'https://192.168.106.187:18065/api/prdi/get/notification/reg?ParamIn=0&ParamOut=1';
+        $url = $_ENV['api.getNotif'];
+        $curl = curl_init($url);
+        try {
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, '{}');
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            $result = curl_exec($curl);
+            curl_close($curl);
+            return $this->respondCreated($result);
+        } catch (\Throwable $e) {
+            echo($e->getMessage());
+        }
+    }
+    
     function index()
     {
         $method = $_SERVER['REQUEST_METHOD'];

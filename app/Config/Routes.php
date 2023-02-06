@@ -41,6 +41,7 @@ $routes->group('api', function($routes){
         $routes->get('/', 'TransactionController::index');
         $routes->post('/paid', 'TransactionController::paid');
         $routes->post('/finish', 'TransactionController::finish');
+        $routes->get('/test/getnotif', 'TransactionController::testApi');
     });
 });
 
