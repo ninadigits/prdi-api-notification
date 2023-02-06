@@ -30,4 +30,14 @@ class HomeController extends ResourceController
         curl_close($curl);
         return $this->respondCreated($result);
     }
+
+    public function testing() 
+    {
+        $data = [
+            'name' => 'Panji',
+            'title' => 'IT Fullstack Dev'
+        ];
+
+        return $this->respondCreated($data);
+    }
 }
