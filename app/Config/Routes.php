@@ -37,7 +37,8 @@ $routes->get('/', 'HomeController::index');
 
 // API Group Routing
 $routes->group('api', function($routes){
-    $routes->group('transaction', ['namespace' => 'App\Controllers\API', 'filter' => 'authorization'], function($routes){
+    // $routes->group('transaction', ['namespace' => 'App\Controllers\API', 'filter' => 'authorization'], function($routes){
+    $routes->group('transaction', ['namespace' => 'App\Controllers\API'], function($routes){
         $routes->get('/', 'TransactionController::index');
         $routes->post('/paid', 'TransactionController::paid');
         $routes->post('/finish', 'TransactionController::finish');
